@@ -1,0 +1,12 @@
+{
+  "code": 1000,
+  "message": "",
+  "data": {
+    "user_info": {
+      "id": "1",
+      "name": "Rodey Luo",
+      "email": "RodeyLuo@gmail.com",
+      "phone": "13100000000"
+    }
+  }
+}

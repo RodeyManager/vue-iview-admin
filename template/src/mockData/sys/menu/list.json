@@ -1,0 +1,142 @@
+{
+  "code": 1000,
+  "message": "",
+  "data": {
+    "permissions": [],
+    "menus": [{
+        "id": 1,
+        "pid": 0,
+        "name": "内容管理",
+        "url": "modules/content",
+        "icon": "ios-paper",
+        "promisesions": [],
+        "active": false,
+        "order": 2,
+        "children": [{
+          "id": 2,
+          "pid": 1,
+          "name": "文章管理页",
+          "url": "modules/content/article",
+          "icon": "ios-paper",
+          "promisesions": [],
+          "active": false,
+          "order": 0
+        }, {
+          "id": 3,
+          "pid": 1,
+          "name": "评论管理",
+          "url": "modules/content/comment",
+          "icon": "ios-paper",
+          "promisesions": [],
+          "active": false,
+          "order": 0
+        }, {
+          "id": 4,
+          "pid": 1,
+          "name": "举报管理",
+          "url": "modules/content/report",
+          "icon": "ios-paper",
+          "promisesions": [],
+          "active": false,
+          "order": 0
+        }]
+      }, {
+        "id": 5,
+        "pid": 0,
+        "name": "系统管理",
+        "url": "modules/sys",
+        "icon": "ios-settings",
+        "promisesions": [],
+        "active": false,
+        "order": 1,
+        "children": [{
+          "id": 6,
+          "pid": 5,
+          "name": "菜单管理",
+          "url": "modules/sys/menu",
+          "icon": "ios-list-box",
+          "promisesions": [],
+          "active": false,
+          "order": 0
+        }, {
+          "id": 7,
+          "pid": 5,
+          "name": "用户管理",
+          "url": "modules/sys/user",
+          "icon": "ios-contacts",
+          "promisesions": [],
+          "active": false,
+          "order": 0
+        }, {
+          "id": 8,
+          "pid": 5,
+          "name": "角色管理",
+          "url": "modules/sys/role",
+          "icon": "ios-woman",
+          "promisesions": [],
+          "active": false,
+          "order": 0
+        }]
+      },
+      {
+        "id": 9,
+        "pid": 0,
+        "name": "统计分析",
+        "url": "modules/analyse",
+        "icon": "ios-stats",
+        "promisesions": [],
+        "active": false,
+        "order": 3,
+        "children": [{
+          "id": 10,
+          "pid": 9,
+          "name": "按日期统计",
+          "url": "modules/analyse/date",
+          "icon": "ios-stats",
+          "promisesions": [],
+          "active": false,
+          "order": 0
+        }, {
+          "id": 11,
+          "pid": 9,
+          "name": "活跃分析",
+          "url": "modules/analyse/activity",
+          "icon": "ios-walk",
+          "promisesions": [],
+          "active": false,
+          "order": 0
+        }]
+      }, {
+        "id": 12,
+        "pid": 0,
+        "name": "Iframe",
+        "url": "modules/iframe",
+        "icon": "ios-browsers",
+        "promisesions": [],
+        "active": false,
+        "order": 4,
+        "children": [{
+            "id": 13,
+            "pid": 12,
+            "name": "百度",
+            "url": "https://www.baidu.com/",
+            "icon": "fa fa-qq",
+            "promisesions": [],
+            "active": false,
+            "order": 0
+          },
+          {
+            "id": 14,
+            "pid": 12,
+            "name": "iview ui",
+            "url": "https://www.iviewui.com",
+            "icon": "ios-contacts",
+            "promisesions": [],
+            "active": false,
+            "order": 0
+          }
+        ]
+      }
+    ]
+  }
+}

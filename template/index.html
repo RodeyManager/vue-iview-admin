@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Vue + Webpack SPA Template</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta content="descriptions" charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  <!--页面自适应-->
+  <!-- <script>
+    (function () {
+      'use strict';
+      // w 根据具体设计稿宽度修改
+      var w = 640,
+        b = document.documentElement,
+        a = function () {
+          var a = b.getBoundingClientRect().width;
+          b.style.fontSize = .0625 * (w <= a ? w : a) + "px";
+        },
+        c = null;
+      window.addEventListener("resize", function () {
+        clearTimeout(c);
+        c = setTimeout(a, 300)
+      });
+      a();
+    })();
+
+  </script> -->
+
+  <% if (process.env.NODE_ENV === 'production') { %>
+    <link rel="stylesheet" href="assets/css/app.min.css" media="screen">
+    <!-- 生产环境 -->
+    <script>
+      (function () {
+        var s = document.createElement('script');
+        s.src = 'assets/js/index.js?_vc_=' + Date.now();
+        document.querySelector('head').appendChild(s);
+      })();
+
+    </script>
+    <% }else { %>
+      <!-- 开发环境 -->
+      <!-- <link rel="stylesheet" href="./src/assets/css/font-awesome.min.css"> -->
+      <script src="./src/config/env/dev.js?_vc_=<%=Date.now()%>"></script>
+      <% } %>
+</head>
+
+<body>
+  <div id="app"></div>
+  <!--载入js-->
+</body>
+
+</html>
